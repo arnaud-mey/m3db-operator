@@ -42,10 +42,8 @@ const (
 	_probeInitialDelaySeconds = 10
 	_probeFailureThreshold    = 15
 
-	// TODO(schallert): switch to dbnode's endpoint instead of coordinator after
-	// https://github.com/m3db/m3/issues/996
-	_probePort       = 7201
 	_probePathHealth = "/health"
+	_probePathReady  = "/bootstrapped"
 
 	_dataDirectory             = "/var/lib/m3db/"
 	_dataVolumeName            = "m3db-data"
